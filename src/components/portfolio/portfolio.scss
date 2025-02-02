@@ -1,0 +1,242 @@
+.portfolio {
+  position: relative;
+  background: linear-gradient(180deg, #111132, #471562);
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #a620ee;
+    font-size: 2rem;
+
+    .progressBar {
+      height: 4px;
+      background-color: #a620ee;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+        margin: 2rem;
+        padding: 1rem;
+        img {
+          width: 90%;
+          height: 90%;
+          object-fit: contain;
+          margin-top: 1rem;
+        }
+      }
+
+      .textContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 3rem;
+        }
+
+        p {
+          margin-top: 1rem;
+          color: gray;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .portfolio {
+    .container {
+      .wrapper {
+        max-width: 1000px;
+        gap: 40px;
+
+        .textContainer {
+          h2 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+
+        .imageContainer {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio {
+    .container {
+      .wrapper {
+        max-width: 800px;
+        gap: 30px;
+
+        .textContainer {
+          h2 {
+            font-size: 2.2rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+
+          .imageContainer {
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    .progress {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      .wrapper {
+        flex-direction: column;
+        gap: 20%;
+        padding: 0 20px;
+
+        .imageContainer {
+          margin: 1rem;
+          padding: 1rem;
+          max-width: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 35%;
+            object-fit: contain;
+          }
+        }
+
+        .textContainer {
+          margin-top: 2.5rem;
+          text-align: center;
+
+          h2 {
+            font-size: 2rem;
+          }
+
+          p {
+            align-self: center;
+            max-width: 50%;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio {
+    .progress {
+      font-size: 1.5rem;
+    }
+
+    .container {
+      .wrapper {
+        flex-direction: column;
+        gap: 20%;
+        padding: 0 15px;
+        .imageContainer {
+          img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 30%;
+            object-fit: contain;
+          }
+        }
+        .textContainer {
+          h2 {
+            font-size: 1.8rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    .progress {
+      font-size: 1rem;
+      margin: 1rem 0rem 0rem 3rem;
+    }
+
+    .container {
+      .wrapper {
+        flex-direction: column;
+        gap: 20%;
+        padding: 0 10px;
+
+        .textContainer {
+          text-align: center;
+          margin: 1rem 0rem 0rem 2rem;
+
+          h2 {
+            align-self: center;
+            font-size: 1.5rem;
+          }
+
+          p {
+            align-self: center;
+            max-width: 100%;
+            font-size: 0.9rem;
+          }
+        }
+
+        .imageContainer {
+          margin: 1rem;
+          padding: 1rem;
+          max-width: 80%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 30%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

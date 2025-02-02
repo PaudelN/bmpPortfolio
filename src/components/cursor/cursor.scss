@@ -1,0 +1,18 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.3);
+
+  transition: transform 0.1s ease, background 0.2s ease, opacity 0.2s ease;
+}

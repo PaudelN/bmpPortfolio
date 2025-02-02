@@ -1,0 +1,21 @@
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bubble {
+    opacity: 0.6; // Reduce opacity on smaller screens
+  }
+}
+
+@media (max-width: 480px) {
+  .bubble {
+    opacity: 0.5; // Further reduce opacity on mobile
+  }
+}
