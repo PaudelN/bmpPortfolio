@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 import { LiaGlobeAmericasSolid } from "react-icons/lia";
 import aboutImage from "../../assets/images/hero10.jpg";
-import "../parallax/parallax.scss";
+import "./parallax.scss";
 
 const firstVariant = {
   initial: {
